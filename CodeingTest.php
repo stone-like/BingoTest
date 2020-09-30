@@ -76,7 +76,7 @@ function isBingoCol($bingoCard, $colNum, $S)
     for ($i = 0; $i < $S; $i++) {
 
 
-        if ("o" !== $col[$i]) {
+        if ($col[$i] !== "o") {
 
             return false; //選択したColumnのなかに"o"が入っていない場所があればその時点でビンゴではない
         }
@@ -93,7 +93,7 @@ function isBingoRow($bingoCard, $rowNum, $S)
 
     for ($i = 0; $i < $S; $i++) {
 
-        if ("o" !== $row[$i]) {
+        if ($row[$i] !== "o") {
 
             return false; //選択したColumnのなかに"o"が入っていない場所があればその時点でビンゴではない
         }
